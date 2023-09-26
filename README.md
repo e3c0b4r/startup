@@ -15,6 +15,7 @@ At Innovations Made Possible, we provide an extensive array of 3D printing servi
 
 ![First Website Layout](startup/images/Innovations_made_possible-Possible_web-design.jpg) 
 
+
 ### Technology specifications
 This following section provides a more detailed and accurate description of the implementation of authentication, database data handling, and WebSocket data updates in a web application using aws for the domain "innovation-made-possible.com"
 
