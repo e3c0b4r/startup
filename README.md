@@ -13,7 +13,9 @@ At Innovations Made Possible, we provide an extensive array of 3D printing servi
 
 ## Web Structure 
 
-![First Website Layout](/BYU-Classes/cs%20260%20Fall-2023/startup/Assets/Images/Innovations%20made%20possible%20(First%20Look).jpg)
+
+![First Website Layout](https://startup/images/Innovations_made_possible-Possible_web-design.jpg) 
+
 
 ### Technology specifications
 This following section provides a more detailed and accurate description of the implementation of authentication, database data handling, and WebSocket data updates in a web application using aws for the domain "innovation-made-possible.com"
@@ -47,17 +49,17 @@ Once a WebSocket connection is established, we can send and receive messages ove
 
 ### Technology stack
 - **Frontend: HTML, CSS, JavaScript, WebGL, Three.js**
-    This frontend stack is used to create the 3D model viewer and the 3D model customization interface. The 3D model viewer is implemented using WebGL and Three.js. The 3D model customization interface is implemented using HTML, CSS, and JavaScript. The 3D model viewer and the 3D model customization interface are integrated into the web page using the HTML `<iframe>` element.
+    I will use the frontend stack to create the 3D model viewer and the 3D model customization interface. The 3D model viewer is implemented using WebGL and Three.js. The 3D model customization interface is implemented using HTML, CSS, and JavaScript. The 3D model viewer and the 3D model customization interface are integrated into the web page using the HTML `<iframe>` element.
 - **Backend: Node.js, Express.js, MySQL**
-    This backend stack is used to implement the user authentication, database data handling, and WebSocket data updates. The user authentication is implemented using Node.js and Express.js. The database data handling is implemented using Node.js and MySQL. The WebSocket data updates are implemented using Node.js and Express.js.
+    I will use backend stack to implement the user authentication, database data handling, and WebSocket data updates. The user authentication is implemented using Node.js and Express.js. The database data handling is implemented using Node.js and MySQL. The WebSocket data updates are implemented using Node.js and Express.js.
 - **Deployment: AWS, Docker**
-    This deployment stack is used to deploy the web application to the cloud. The web application is deployed to AWS using Docker if needed.
-- **Domain: innovatino-made-possible.com**
-    This domain is used to host the web application. The domain is registered on AWS Route 53 and managed by AWS Certificate Manager.
+    I will use this deployment stack to deploy the web application to the cloud. The web application is deployed to AWS using Docker if needed.
+- **Domain: innovations-made-possible.com**
+    I will use this domain to host the web application. The domain is registered on AWS Route 53 and managed by AWS Certificate Manager.
 - **SSL: AWS Certificate Manager**
-    This SSL is used to secure the web application. The SSL is registered on AWS Certificate Manager and managed by AWS Route 53.
+    I will create a SSL to secure the web application. The SSL is registered on AWS Certificate Manager and managed by AWS Route 53.I am planning to use the (AWS) Certificate Manager (ACM) for SSL registration
 - **DNS: AWS Route 53**
-    This DNS is used to manage the domain and SSL. The DNS is registered on AWS Route 53 and managed by AWS Certificate Manager.
+    I will configure the DNS to manage the domain and SSL. The DNS is registered on AWS Route 53 and managed by AWS Certificate Manager.
 
 # Roadmap (Milestones) (Possible Features)
 - [x]  AWS account setup 09/23/2023
