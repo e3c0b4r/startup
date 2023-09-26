@@ -13,7 +13,7 @@ At Innovations Made Possible, we provide an extensive array of 3D printing servi
 
 ## Web Structure 
 
-![First Website Layout](startup/images/Innovations_made_possible-Possible_web-design.jpg) 
+![First Website Layout](https://github.com/e3c0b4r/startup/Assets/Images/Innovations_made_possible-Possible_web-design.jpg) 
 
 
 ### Technology specifications
