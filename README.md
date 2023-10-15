@@ -61,11 +61,26 @@ Once a WebSocket connection is established, we can send and receive messages ove
 - **DNS: AWS Route 53**
     I will configure the DNS to manage the domain and SSL. The DNS is registered on AWS Route 53 and managed by AWS Certificate Manager.
 
+## Notes for Section 5 "HTML" (Find the extended notes (HERE))
+### Modifications and Additions to the Startup HTML:
+- Added a new section for the "About" page.
+    
+
+
+
+
+
+
+
 # Roadmap (Milestones) (Possible Features)
 - [x]  AWS account setup 09/23/2023
 - [x]  Domain registration 09/23/2023
+- [x]  Route 53 hosted zone setup 09/23/2023
+- [x]  setup a subdomain for simon.innovations-made-possible.com 09/30/2023 
+- [x]  create a directory structure for the web application10/11/2023
+- [x]  create a html 'home', 'about' and 'cart' pages for innovations-made-possible.com 10/11/2023
+- [x]  Added notes for the secction 5 "HTML" find the notes (HERE) 10/11/2023
 - [ ]  SSL registration
-- [ ]  DNS setup
 - [ ]  Web application setup
 - [ ]  User authentication
 - [ ]  Database data handling

@@ -1,0 +1,40 @@
+# All the files that should not be tracked by git
+# Environment
+.env
+*.log
+
+# simon-html
+simon-html/
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Database
+*.db
+*.sqlite3
+database/*.sqlite
+
+# Editors & IDEs
+.vscode/
+
+
+# OS Specific
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Testing and Coverage
+coverage/
+
+# Others
+tmp/
+temp/
+.cache/
+logs/
+.next/
