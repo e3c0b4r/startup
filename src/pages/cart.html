@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Parts - Cart</title>
+    <style>
+        /* Existing styles... */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 2rem;
+            background-color: #34495e;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .scrolling-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+        }
+
+        .scrolling-gallery img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Cart-specific styles */
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .product-info {
+            flex: 2;
+        }
+
+        .product-quantity, .product-price, .remove-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .cart-summary {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .cart-summary div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/login.html">Login</a>
+        <a href="https://github.com/e3c0b4r/startup" target="_blank">David Escobar - GitHub Repository</a>
+    </nav>
+
+    <header>
+        <h1>3D Parts. - Cart</h1>
+    </header>
+
+    <div class="container">
+        <h2>Your Cart</h2>
+        <ul class="cart-items">
+            <!-- Sample item structure -->
+            <li class="cart-item">
+                <img src="path_to_product_image.jpg" alt="Product Name">
+                <div class="product-info">
+                    <h3>Product Name</h3>
+                    <p>Short description about the 3D print product.</p>
+                </div>
+                <div class="product-quantity">
+                    <input type="number" value="1">
+                </div>
+                <div class="product-price">$9.99</div>
+                <button class="remove-item">Remove</button>
+            </li>
+        </ul>
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="promo-code">
+                <input type="text" placeholder="Enter Promo Code">
+                <button class="apply-promo">Apply</button>
+            </div>
+            <div>
+                <span>Subtotal:</span>
+                <span class="subtotal-price">$0.00</span>
+            </div>
+            <div>
+                <span>Discount:</span>
+                <span class="discount-price">-$0.00</span>
+            </div>
+            <div>
+                <span>Tax:</span>
+                <span class="tax-price">$0.00</span>
+            </div>
+            <div>
+                <span>Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+        <a href="#" class="continue-shopping">Continue Shopping</a>
+    </div>
+</body>
+
+</html>
