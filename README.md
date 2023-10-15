@@ -64,7 +64,8 @@ Once a WebSocket connection is established, we can send and receive messages ove
 ## Notes for Section 5 "HTML" (Read the extended notes ([HERE](notes.md)))
 ### Modifications and Additions to the Startup HTML Section 5:
 - added additional links to the simon-html page: links to my GitHub account and production environment.
-- 
+- Created basic HTML pages for the home and about, with some basic inline css styling. These pages are linked gothaer.
+- Added a basic cart page with a table and some basic inline css styling. This page is linked to the home page, and the contact page which shares the same basic style as the other pages.
 
 
 
@@ -78,7 +79,7 @@ Once a WebSocket connection is established, we can send and receive messages ove
 - [x]  Route 53 hosted zone setup 09/23/2023
 - [x]  setup a subdomain for simon.innovations-made-possible.com 09/30/2023 
 - [x]  create a directory structure for the web application10/11/2023
-- [x]  create a html 'home', 'about' and 'cart' pages for innovations-made-possible.com 10/11/2023
+- [x]  create a html 'home', 'about', contact and 'cart' pages for innovations-made-possible.com 10/11/2023
 - [x]  Added notes for the secction 5 "HTML" find the notes ([HERE](notes.md)) 10/11/2023
 - [ ]  SSL registration
 - [ ]  Web application setup
