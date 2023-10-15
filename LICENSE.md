@@ -1,0 +1,1 @@
+This file will contain licensing information for the project. It will be a markdown file that contains the license information for the project. The license will be MIT (possible). The license will be in the root directory of the project. 
