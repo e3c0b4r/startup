@@ -146,10 +146,29 @@
     
 ----------
 ### CSS Section 6:
-
-
-
-
+#### CSS Section 6: Notes from the "Simon CSS" section:
+- Introduced a gradient background for the body.
+- Changed the font to 'Trebuchet MS', sans-serif.
+- Added text alignment to header and footer.
+- Modified the header and footer to have dark backgrounds.
+- Introduced a blue border to the bottom of the header and top of the footer.
+- Added box shadows to the header, main, and footer for depth.
+- The main section now has:
+    - Padding for space.
+    - Background with a slight white shade.
+    - Rounded corners.
+    - Margins and shadows.
+- The menu items are now spread out using justify-content.
+- Updated the .navbar-brand with:
+    - Bigger font size.
+    - Bold weight.
+    - Blue color.
+- Each .nav-item in the menu now has:
+    - A border with rounded corners.
+    - Increased padding.
+    - Hover effects that change the background and text color.
+- Footer links (a tags) now have a blue color with a hover effect.
+- For small screen sizes, the main section now aligns and justifies its content to the center and removes its margins.
 
 
 
