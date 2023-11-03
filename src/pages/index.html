@@ -6,110 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Parts</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #ffffff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5rem 2rem;
-            background-color: #34495e;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 1rem;
-        }
-        nav a:hover {
-        background-color: #2c3e50;
-        padding: 5px 10px;
-        border-radius: 5px;
-        }   
-
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        .product {
-            border: 1px solid #ddd;
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .product img {
-            max-width: 100%;
-        }
-        .product button a {
-        color: #fff;
-        text-decoration: none;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #2ecc71;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .scrolling-gallery {
-            display: flex;
-            overflow-x: auto;
-            gap: 1rem;
-        }
-
-        .scrolling-gallery img {
-            height: 150px;
-            object-fit: cover;
-        }
-        footer {
-        background-color: #2c3e50;
-        color: #ffffff;
-        text-align: center;
-        padding: 1rem 0;
-        }
-        @media screen and (max-width: 768px) {
-        .scrolling-gallery img {
-        height: 100px;
-        }
-        nav {
-        flex-direction: column;
-        align-items: center;
-        }
-        nav a {
-        margin: 5px 0;
-        }
-        }
-
-        @media screen and (max-width: 480px) {
-            .container {
-                padding: 0 10px;
-            }
-        }
-    </style>
-
-    <!-- Place for the Simon HTML production link -->
-    <!-- LIVE LINK: The live link to the website here -->
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -127,12 +24,11 @@
     </header>
 
     <div class="scrolling-gallery">
-        <img href="https://drive.google.com/file/d/1jELzTqZY4FUqlQMbEYs_HmLsCktZAS9K/view?usp=sharing" alt="Image 1">
-        <iframe src="https://drive.google.com/file/d/1jELzTqZY4FUqlQMbEYs_HmLsCktZAS9K/preview" width="640" height="480" allow="autoplay"></iframe>
-        <img href="Scrolling-Gal image # (2).jpg" alt="Image 2">
-        <img href="/components/images/Scrolling-Gal image # (3).jpg" alt="Image 3">
-        <img href="/components/images/Scrolling-Gal image # (4).jpg" alt="Image 4">
-        <img href="/components/images/Scrolling-Gal image # (5).jpg" alt="Image 5">
+        <img src="https://drive.google.com/uc?export=view&id=1jELzTqZY4FUqlQMbEYs_HmLsCktZAS9K" alt="Image 1">
+        <img src="Scrolling-Gal image # (2).jpg" alt="Image 2">
+        <img src="/components/images/Scrolling-Gal image # (3).jpg" alt="Image 3">
+        <img src="/components/images/Scrolling-Gal image # (4).jpg" alt="Image 4">
+        <img src="/components/images/Scrolling-Gal image # (5).jpg" alt="Image 5">
     </div>
 
     <div class="container">
@@ -141,7 +37,7 @@
             <p>
                 At <strong>3D Parts</strong>, we are dedicated to bringing you the finest in 3D printing solutions. Whether you're an enthusiast looking for quality parts for your next project or a business seeking rapid prototyping, our collection caters to every 3D printing need. Dive into a world where precision meets creativity and witness the future of manufacturing.
             </p>
-            <button><a href="/products.html">Explore Our Products</a></button>
+            <a href="/products.html" class="button">Explore Our Products</a>
         </div>
     </div>
     
@@ -150,38 +46,39 @@
             <img src="path_to_product_image1.jpg" alt="Product Image 1">
             <h2>Product Name 1</h2>
             <p>Short description about the 3D print product.</p>
-            <button>Add to Cart</button>
+            <a href="#" class="button">Add to Cart</a>
         </div>
 
         <div class="product">
             <img src="path_to_product_image2.jpg" alt="Product Image 2">
             <h2>Product Name 2</h2>
             <p>Short description about the 3D print product.</p>
-            <button>Add to Cart</button>
+            <a href="#" class="button">Add to Cart</a>
         </div>
 
         <div class="product">
             <img src="path_to_product_image3.jpg" alt="Product Image 3">
             <h2>Product Name 3</h2>
             <p>Short description about the 3D print product.</p>
-            <button>Add to Cart</button>
+            <a href="#" class="button">Add to Cart</a>
         </div>
 
-        <!-- Placeholder for username display after login -->
         <p>Logged in as: <span id="username_placeholder">[username]</span></p>
-
-        <!-- Placeholder for Database content -->
-        <!-- DATABASE CONTENT: Add content pulled from the database here -->
-
-        <!-- Placeholder for WebSocket real-time communication -->
-        <!-- WEBSOCKET DATA: This is where real-time data will be shown -->
-
-        <!-- Placeholder for 3rd party service calls -->
-        <!-- 3RD PARTY SERVICE: Add content from 3rd party services here -->
     </div>
-</body>
-<footer>
-    &copy; 2023 3D Parts. All Rights Reserved.
-</footer>
 
+    <footer>
+        <p>&copy; 2023 3D Parts | Designed by David Escobar</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
 </html>
+
+
+
+
+
+
+
+
+

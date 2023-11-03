@@ -117,6 +117,7 @@
 
     <div class="container">
         <h2>Your Cart</h2>
+        
         <ul class="cart-items">
             <!-- Sample item structure -->
             <li class="cart-item">
@@ -159,5 +160,92 @@
         <a href="#" class="continue-shopping">Continue Shopping</a>
     </div>
 </body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+
+    const displayCartItems = () => {
+        const cartItemsContainer = document.querySelector('.cart-items');
+        cartItemsContainer.innerHTML = ""; // Clear existing items
+
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.classList.add('cart-item');
+
+            const img = document.createElement('img');
+            img.src = item.imageSrc;
+            img.alt = item.productName;
+
+            const productInfo = document.createElement('div');
+            productInfo.classList.add('product-info');
+
+            const h3 = document.createElement('h3');
+            h3.innerText = item.productName;
+            productInfo.appendChild(h3);
+
+            const p = document.createElement('p');
+            p.innerText = item.productDescription;
+            productInfo.appendChild(p);
+
+            const productQuantity = document.createElement('div');
+            productQuantity.classList.add('product-quantity');
+            const quantityInput = document.createElement('input');
+            quantityInput.type = "number";
+            quantityInput.value = item.quantity;
+            productQuantity.appendChild(quantityInput);
+
+            const productPrice = document.createElement('div');
+            productPrice.classList.add('product-price');
+            productPrice.innerText = `$${item.price.toFixed(2)}`;
+
+            const removeButton = document.createElement('button');
+            removeButton.classList.add('remove-item');
+            removeButton.innerText = "Remove";
+            removeButton.addEventListener('click', () => {
+                // Remove the item from the cart array
+                const index = cart.findIndex(cartItem => cartItem.id === item.id);
+                cart.splice(index, 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                // Redisplay the cart items
+                displayCartItems();
+            });
+
+            li.appendChild(img);
+            li.appendChild(productInfo);
+            li.appendChild(productQuantity);
+            li.appendChild(productPrice);
+            li.appendChild(removeButton);
+
+            cartItemsContainer.appendChild(li);
+        });
+
+        // Update cart summary values by adding logic for promo codes, taxes, etc. here)
+        document.querySelector('.subtotal-price').innerText = `$${cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)}`;
+        // Other summary values discounts, taxes, and total can be updated similarly here
+    };
+
+    // Sample WebSocket for real-time updates (e.g., stock availability)
+    const cartWebSocket = {
+        init: function() {
+            console.log("WebSocket for cart initialized.");
+        },
+        send: function(message) {
+            console.log(`Sending message: ${message}`);
+        },
+        onmessage: function(event) {
+            console.log(`Received message: ${event.data}`);
+            // For example, if stock for an item in the cart has changed, you can reflect it here
+        }
+    };
+
+    // Initialize WebSocket and display cart items
+    cartWebSocket.init();
+    displayCartItems();
+});
+
+
+</script>
 
 </html>

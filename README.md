@@ -77,16 +77,20 @@ This are the modifications and additions to the simmon CSS Section 6 on the simo
 - The menu items are now spread out using justify-content.
 - Footer links (a tags) now have a blue color with a hover effect.
 
+## Notes for Section 7 "JavaScript" (Read the extended notes ([HERE](notes.md)))
+### 
+- Mayor changes were made to on all the html files separating CSS and JS from the html files these were previoulsty inline.
 
 # Roadmap (Milestones) (Possible Features)
 - [x]  AWS account setup 09/23/2023
 - [x]  Domain registration 09/23/2023
 - [x]  Route 53 hosted zone setup 09/23/2023
 - [x]  setup a subdomain for simon.innovations-made-possible.com 09/30/2023 
-- [x]  create a directory structure for the web application10/11/2023
-- [x]  create a html 'home', 'about', login, contact and 'cart' pages for innovations-made-possible.com 10/14/2023
+- [x]  created a directory structure for the web application10/11/2023
+- [x]  created a html 'home', 'about', login, contact and 'cart' pages for innovations-made-possible.com 10/14/2023
 - [x]  Added notes for the secction 5 "HTML" find the notes ([HERE](notes.md)) 10/11/2023
 - [x]  Added notes for the secction 6 "CSS" find the notes ([HERE](notes.md)) 10/14/2023
+- [ ]  Major changes were made to all the HTML files, separating CSS and JS from the HTML. Previously, these were inline
 - [ ]  SSL registration
 - [ ]  Web application setup
 - [ ]  User authentication
