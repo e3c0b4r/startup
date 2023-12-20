@@ -90,7 +90,9 @@ This are the modifications and additions to the simmon CSS Section 6 on the simo
 - [x]  created a html 'home', 'about', login, contact and 'cart' pages for innovations-made-possible.com 10/14/2023
 - [x]  Added notes for the secction 5 "HTML" find the notes ([HERE](notes.md)) 10/11/2023
 - [x]  Added notes for the secction 6 "CSS" find the notes ([HERE](notes.md)) 10/14/2023
-- [ ]  Major changes were made to all the HTML files, separating CSS and JS from the HTML. Previously, these were inline
+- [x]  Major changes were made to all the HTML files, separating CSS and JS from the HTML. Previously, these were inline
+- [x]  Added notes for the secction 7 "JavaScript" find the notes ([HERE](notes.md))
+- [x]  Made mayour organization changes to the directory structure of the web application.
 - [ ]  SSL registration
 - [ ]  Web application setup
 - [ ]  User authentication
