@@ -80,6 +80,13 @@ This are the modifications and additions to the simmon CSS Section 6 on the simo
 ## Notes for Section 7 "JavaScript" (Read the extended notes ([HERE](notes.md)))
 ### 
 - Mayor changes were made to on all the html files separating CSS and JS from the html files these were previoulsty inline.
+- Created a new file called 'login.js' and added the code from the login.html file.
+- Added changes to the 'login.js' file to make it work with the login.html file.
+- For the login.js file I removed the mock database and websocket code temporarily since it typically would be handled by the backend in a server-side API to authenticate users.
+- Added error handling to the login.js file and user feedback. Currently, the login.js file checks if the username and password fields are empty. If they are, it displays an error message. If not, it displays a success message. Use `FormData` to get form values. This is a more flexible and scalable approach than manually querying each form field.
+- In the login.html file, I added an element to display error messages that helpe to improve the user experience and future troubleshooting.
+
+
 
 # Roadmap (Milestones) (Possible Features)
 - [x]  AWS account setup 09/23/2023
