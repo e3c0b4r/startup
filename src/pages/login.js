@@ -1,5 +1,3 @@
-
-
 // Mock database user data (just testing for now)
 const mockDBUsers = [
     {

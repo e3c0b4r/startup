@@ -1,43 +1,83 @@
 <!DOCTYPE html>
+<!-- The document type declaration. It is used to tell the browser about the HTML version used in the document. -->
+
 <html lang="en">
+<!-- The root element of an HTML document. The 'lang' attribute specifies the language of the document's content. -->
 
 <head>
+    <!-- The container for metadata (data about data) and it is placed between the <html> tag and the <body> tag. -->
+
     <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the HTML document. -->
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tells Internet Explorer (IE) to display the webpage in edge mode, which is the highest standards mode supported by IE. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gives the browser instructions on how to control the page's dimensions and scaling. -->
+
     <title>3D Prints - Login</title>
+    <!-- Defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. -->
+
     <link rel="stylesheet" href="login.css">
+    <!-- Defines a link between the current document and an external resource. This link is used to link to the CSS file. -->
 </head>
 
 <body>
+    <!-- Contains the content that is rendered on the browser. -->
+
     <nav>
+        <!-- Defines a set of navigation links. -->
+
         <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="/login.html">Login</a>
         <a href="https://github.com/e3c0b4r/startup" target="_blank">David Escobar - GitHub Repository</a>
+        <!-- These are anchor tags, used to create hyperlinks. -->
     </nav>
 
     <header>
+        <!-- Represents a container for introductory content or a set of navigational links. -->
+
         <h1>3D Parts. - Login</h1>
+        <!-- This is a heading tag. The number (1) defines the size and importance of the heading. -->
     </header>
 
     <div class="container">
+        <!-- A generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes. -->
+
         <h2>Login</h2>
+        <!-- This is a heading tag. The number (2) defines the size and importance of the heading. -->
+
         <form action="/path_to_server_login" method="POST" class="login-form">
+            <!-- Represents a document section that contains interactive controls for submitting information to a web server. -->
+
             <label for="email">Email:</label>
+            <!-- Represents a caption for an item in a user interface. The 'for' attribute associates the label with form element. -->
+
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <!-- Represents an input field in a form. The 'type' attribute specifies the type of input field, the 'id' attribute provides a unique id for the element, the 'name' attribute specifies the name for the input element, the 'placeholder' attribute specifies a short hint that describes the expected value of the input field, and the 'required' attribute specifies that the input field must be filled out before submitting the form. -->
 
             <label for="password">Password:</label>
+            <!-- Represents a caption for an item in a user interface. The 'for' attribute associates the label with form element. -->
+
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <!-- Represents an input field in a form. The 'type' attribute specifies the type of input field, the 'id' attribute provides a unique id for the element, the 'name' attribute specifies the name for the input element, the 'placeholder' attribute specifies a short hint that describes the expected value of the input field, and the 'required' attribute specifies that the input field must be filled out before submitting the form. -->
 
             <button type="submit">Login</button>
+            <!-- Represents a clickable button. The 'type' attribute specifies the type of the button. -->
         </form>
+
+        <p class="error-message" style="color: red;"></p>
+        <!-- Represents a paragraph. The 'class' attribute specifies one or more classnames for an element. The 'style' attribute specifies inline CSS style for an element. -->
+
         <p>Don't have an account? <a href="/signup.html">Sign up</a></p>
+        <!-- Represents a paragraph. The anchor tag inside the paragraph creates a hyperlink. -->
     </div>
+
     <script src="login.js"></script>
+    <!-- Defines a client-side script. The 'src' attribute specifies the URL of an external script file. -->
 </body>
 
 </html>
-
-
