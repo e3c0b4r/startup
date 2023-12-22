@@ -45,4 +45,13 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     displayProducts();
+
+    // Fetch data from a third-party API and display
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => {
+            // Handle and display the data from the API
+            console.log(data);
+        })
+        .catch(error => console.error('Error fetching data:', error));
 });
