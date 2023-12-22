@@ -78,7 +78,7 @@ This are the modifications and additions to the simmon CSS Section 6 on the simo
 - Footer links (a tags) now have a blue color with a hover effect.
 
 ## Notes for Section 7 and 8 "JavaScript" (Read the extended notes ([HERE](notes.md)))
-### 
+### Modifications and Additions to the Startup Section 7 and 8:
 - Mayor changes were made to on all the html files separating CSS and JS from the html files these were previoulsty inline.
 - Created a new file called 'login.js' and added the code from the login.html file.
 - Added changes to the 'login.js' file to make it work with the login.html file.
@@ -86,6 +86,24 @@ This are the modifications and additions to the simmon CSS Section 6 on the simo
 - Added error handling to the login.js file and user feedback. Currently, the login.js file checks if the username and password fields are empty. If they are, it displays an error message. If not, it displays a success message. Use `FormData` to get form values. This is a more flexible and scalable approach than manually querying each form field.
 - In the login.html file, I added an element to display error messages that helpe to improve the user experience and future troubleshooting.
 - Both files login.html and login.js were modified and have better comments.
+
+## Notes for Section 9 and 10 "Web Services and Startup Service" (Read the extended notes ([HERE](notes.md)))
+###
+
+- **Create an HTTP service using Node.js and Express. (30%)**
+    - [x] Completed: The index.js file creates an HTTP service using Node.js and Express, as demonstrated by the use of const express = require('express'); and setting up the Express app.**
+- **Frontend served up using express static middleware. (10%)**
+    - [x] Completed: The code uses express.static middleware to serve static files from the public directory, completing this requirement.
+- **Frontend calls third party service endpoints (10%)**
+    - [x] Completed: The script.js file successfully fetches data from the backend ('/products' endpoint) and displays it on the frontend, completing this requirement.
+
+- **Backend provides service endpoints (20%)**
+    - [x] Completed: The code provides service endpoints, as demonstrated by the use of app.get() and app.post() to handle HTTP GET and POST requests. This happens in the index.js file. There is '/path_to_server_login' endpoind.
+
+- **The frontend calls the service endpoints (20%)**
+    - [x] Completed: The frontend calls the service endpoints, as demonstrated by the use of fetch() to make HTTP requests to the backend. The login.js includes AJAX calls to the backend '/path_to_server_login' endpoint.
+
+
 
 
 # Roadmap (Milestones) (Possible Features)
